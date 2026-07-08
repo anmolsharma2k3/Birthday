@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#050816;
+    font-family:'Poppins',sans-serif;
+    overflow-x:hidden;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px 20px;
+    position:relative;
+}
+
+/* =========================
+        STARS
+========================= */
+
+.stars{
+    position:fixed;
+    inset:0;
+    background:url("https://www.transparenttextures.com/patterns/stardust.png");
+    opacity:.45;
+    z-index:-3;
+}
+
+/* =========================
+      GLOW EFFECT
+========================= */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:
+    radial-gradient(circle at 20% 20%,rgba(255,105,180,.18),transparent 40%),
+    radial-gradient(circle at 80% 30%,rgba(128,0,255,.18),transparent 40%),
+    radial-gradient(circle at 50% 80%,rgba(0,191,255,.15),transparent 45%);
+    animation:bgMove 10s ease-in-out infinite alternate;
+    z-index:-2;
+}
+
+@keyframes bgMove{
+
+from{
+transform:scale(1);
+}
+
+to{
+transform:scale(1.15);
+}
+
+}
+
+/* =========================
+      FLOATING HEARTS
+========================= */
+
+.hearts{
+    position:fixed;
+    inset:0;
+    overflow:hidden;
+    pointer-events:none;
+    z-index:-1;
+}
+
+.heart{
+    position:absolute;
+    bottom:-50px;
+    color:#ff4d88;
+    animation:float linear infinite;
+    opacity:.8;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0) rotate(0deg);
+opacity:0;
+}
+
+20%{
+opacity:1;
+}
+
+100%{
+transform:translateY(-120vh) rotate(360deg);
+opacity:0;
+}
+
+}
+
+/* =========================
+        PAGE
+========================= */
+
+.page{
+
+width:100%;
+max-width:900px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(15px);
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:25px;
+
+padding:60px;
+
+box-shadow:0 20px 60px rgba(0,0,0,.5);
+
+color:#fff;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.page::before{
+
+content:"";
+
+position:absolute;
+
+left:40px;
+
+top:0;
+
+width:2px;
+
+height:100%;
+
+background:rgba(255,182,193,.4);
+
+}
+
+.page h1{
+
+text-align:center;
+
+font-size:45px;
+
+margin-bottom:40px;
+
+color:#ff7eb3;
+
+}
+
+.page p{
+
+font-size:18px;
+
+line-height:2.1;
+
+text-align:justify;
+
+text-indent:35px;
+
+margin-bottom:22px;
+
+color:#eee;
+
+}
+
+.signature{
+
+margin-top:50px;
+
+text-align:right;
+
+}
+
+.signature h2{
+
+font-size:34px;
+
+color:#ff8fab;
+
+}
+
+.signature span{
+
+font-size:20px;
+
+color:#ddd;
+
+}
+
+/* =========================
+      RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+.page{
+
+padding:35px 25px;
+
+}
+
+.page::before{
+
+left:22px;
+
+}
+
+.page h1{
+
+font-size:30px;
+
+}
+
+.page p{
+
+font-size:16px;
+
+line-height:1.9;
+
+}
+
+.signature h2{
+
+font-size:28px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="stars"></div>
+<div class="hearts"></div>
+
+<div class="page">
+
+<h1>🎂 Happy Birthday My Love ❤️</h1>
+
+<p>
+Happy Birthday to the most beautiful girl in my life. Today is not just your birthday—it is the day my favorite person came into this world. Every year this date reminds me how lucky I am to have someone as wonderful as you in my life. Thank you for being the reason behind so many of my smiles.
+</p>
+
+<p>
+From the moment you entered my life, everything started feeling brighter. Your smile became my peace, your voice became my comfort, and your happiness became my priority. Every conversation, every laugh, every little memory with you has become a treasure that I will always keep close to my heart.
+</p>
+
+<p>
+You are not just my girlfriend. You are my best friend, my safe place, my biggest blessing, and the person I want beside me through every chapter of life. Whenever life gets difficult, just thinking about you gives me strength and hope. You make ordinary moments feel magical simply by being there.
+</p>
+
+<p>
+On your special day, I pray that every dream hidden in your heart comes true. May your life always be filled with happiness, success, good health, endless laughter, and beautiful surprises. I hope every sunrise brings you hope and every sunset leaves you with beautiful memories.
+</p>
+
+<p>
+Thank you for accepting me with all my imperfections, for believing in me even when I doubted myself, and for standing beside me through every smile and every struggle. Your love has changed me into a better person, and I will always be grateful for that.
+</p>
+
+<p>
+I promise to always love you, respect you, support you, and hold your hand through every season of life. No matter where life takes us, my heart will always choose you. I want to celebrate not just this birthday but every birthday that comes in our future together.
+</p>
+
+<p>
+Happy Birthday, my princess. May this new year of your life bring countless reasons to smile and endless moments of joy. Always remember that you are deeply loved, endlessly appreciated, and forever cherished.
+</p>
+
+<div class="signature">
+
+<h2>Forever Yours ❤️</h2>
+
+<span>Anmol</span>
+
+</div>
+
+</div>
+
+<script>
+
+function createHeart(){
+
+const heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="❤";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=(18+Math.random()*25)+"px";
+
+heart.style.animationDuration=(5+Math.random()*5)+"s";
+
+document.querySelector(".hearts").appendChild(heart);
+
+setTimeout(()=>{
+
+heart.remove();
+
+},10000);
+
+}
+
+setInterval(createHeart,300);
+
+</script>
+
+</body>
+</html>

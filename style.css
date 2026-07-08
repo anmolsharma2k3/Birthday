@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+    font-family:Poppins,sans-serif;
+    background:#080b16;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+.bg{
+    position:fixed;
+    inset:0;
+    background:url("images/bg.jpg") center/cover no-repeat;
+    filter:blur(12px) brightness(.35);
+    transform:scale(1.08);
+    z-index:-3;
+}
+.overlay{
+    position:fixed;
+    inset:0;
+    background:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.65));
+    z-index:-2;
+}
+
+.wrap{
+    min-height:100vh;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.wrap h3{font-size:2rem;letter-spacing:3px;color:#ffd6e8;text-align:center}
+.wrap h1{font-size:4rem;margin:10px 0 30px;text-shadow:0 0 20px #ff4f8b;text-align:center}
+
+.clock{
+    display:grid;
+    grid-template-columns:repeat(4,140px);
+    gap:20px;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto;
+}
+.card{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    backdrop-filter:blur(15px);
+    border-radius:22px;
+    padding:25px 10px;
+    box-shadow:0 10px 30px rgba(0,0,0,.45);
+    transition:.4s;
+}
+.card:hover{transform:translateY(-8px) scale(1.04)}
+.card span{display:block;font-size:3rem;font-weight:700;text-align:center}
+.card label{color:#ddd;letter-spacing:2px;text-align:center}
+
+.wrap p{margin:30px 0;font-size:1.2rem;text-align:center}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    color:#fff;
+    text-align:center;
+    background:linear-gradient(135deg,#ff2d75,#ff6b81);
+    padding:16px 40px;
+    border-radius:50px;
+    font-weight:600;
+    box-shadow:0 0 25px rgba(255,80,140,.5);
+    transition:.35s;
+}
+.btn:hover{transform:scale(1.08)}
+
+.maindiv,.maindiv2,.maindiv3,.maindiv4,.maindiv5,.funnychat{
+    width:min(1200px,92%);
+    margin:60px auto;
+    background:rgba(255,255,255,.06);
+    backdrop-filter:blur(14px);
+    border-radius:30px;
+    padding:40px;
+    border:1px solid rgba(255,255,255,.12);
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+}
+
+.header{text-align:center;margin-bottom:40px}
+.header h3{font-size:4rem;color:#ff7db8;text-align:center}
+.header p{color:#ddd;text-align:center}
+
+.chat,.firstmeet,.secondmeet,.thirdmeet,.fourthmeet,.fifthmeet{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+    align-items:center;
+    justify-items:center;
+    margin:30px 0;
+}
+
+/* funnychat also acts as outer wrapper (see .maindiv rule above),
+   so it needs its own grid rule with margin:auto to stay centered */
+.funnychat{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+    align-items:center;
+    justify-items:center;
+}
+
+.chat1,.firstmeet2,.funnychat2,.secondmeet2,.thirdmeet2,.fourthmeet2,.fifthmeet2{
+    width:100%;
+    background:rgba(255,255,255,.07);
+    border-radius:20px;
+    padding:30px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.meet,.chattext{color:#ececec;font-style:italic;line-height:1.8;text-align:center}
+
+.firstmeetimages,.funnychatimages,.secondmeetimages,.fourthmeetimages,.fifthmeetimages{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:18px;
+    margin-top:30px;
+    width:100%;
+    justify-items:center;
+}
+
+.firstmeetimages div,.funnychatimages div,.secondmeetimages div,.fourthmeetimages div,.fifthmeetimages div{
+    overflow:hidden;
+    border-radius:18px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+img{
+    width:100%;
+    display:block;
+    border-radius:18px;
+    transition:.5s;
+    object-fit:cover;
+}
+img:hover{transform:scale(1.08)}
+
+.end{
+    width:min(1200px,92%);
+    margin:60px auto;
+    text-align:center;
+    padding:70px 20px;
+    border-radius:30px;
+    background:linear-gradient(135deg,#ff3f88,#6f3bff);
+}
+.end1 p{font-size:2.2rem;margin-bottom:15px;text-align:center}
+.end2 p{font-size:1.4rem;text-align:center}
+
+/* Images */
+
+.chat2 img,
+.firstmeet1 img,
+.secondmeet1 img,
+.thirdmeet1 img,
+.fourthmeet1 img,
+.fifthmeet1 img,
+.funnychat1 img{
+    width:100%;
+    max-width:420px;
+    display:block;
+    margin:0 auto;
+    border-radius:20px;
+    object-fit:cover;
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+}
+
+.chat2,
+.firstmeet1,
+.secondmeet1,
+.thirdmeet1,
+.fourthmeet1,
+.fifthmeet1,
+.funnychat1{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+}
+
+/* Heading */
+
+.headersec1 h3{
+    font-size:4rem;
+    color:#ff7db8;
+    text-align:center;
+    width:100%;
+}
+
+.headersec2 p{
+    color:#ddd;
+    font-size:1.2rem;
+    text-align:center;
+    margin-top:10px;
+    width:100%;
+}
+
+/* Text Sections */
+
+.firstmeet2,
+.secondmeet2,
+.thirdmeet2,
+.fourthmeet2,
+.fifthmeet2,
+.funnychat2,
+.chat1{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.firstmeet2 h2,
+.secondmeet2 h2,
+.thirdmeet2 h2,
+.fourthmeet2 h2,
+.fifthmeet2 h2,
+.funnychat2 h2{
+    color:#ff7db8;
+    margin-bottom:15px;
+    font-size:2rem;
+    text-align:center;
+    width:100%;
+}
+
+.meet,
+.chattext{
+    color:#eee;
+    line-height:1.8;
+    font-size:1.1rem;
+    text-align:center;
+}
+
+.btn.disabled{
+    opacity:0.5;
+    cursor:not-allowed;
+    pointer-events:none;
+    background:#666;
+    box-shadow:none;
+}
+
+#birthdayMessage{
+    display:none;
+    margin:35px auto;
+    text-align:center;
+    font-size:3rem;
+    color:#ffd700;
+    text-shadow:0 0 20px #ff4d88;
+    animation:heartbeat 1s infinite;
+    width:100%;
+}
+
+@keyframes heartbeat{
+    0%{transform:scale(1);}
+    25%{transform:scale(1.08);}
+    50%{transform:scale(1);}
+    75%{transform:scale(1.08);}
+    100%{transform:scale(1);}
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+    .clock{grid-template-columns:repeat(2,140px)}
+    .chat,.firstmeet,.funnychat,.secondmeet,.thirdmeet,.fourthmeet,.fifthmeet{
+        grid-template-columns:1fr !important;
+        text-align:center;
+    }
+    .header h3,.wrap h1{font-size:2.5rem;text-align:center}
+}
+
+@media(max-width:500px){
+    .clock{grid-template-columns:1fr;justify-items:center}
+    .card{width:100%;max-width:280px;margin:0 auto}
+    .funnychatimages,.firstmeetimages,.secondmeetimages,.fourthmeetimages,.fifthmeetimages{
+        grid-template-columns:1fr;
+    }
+}
+/* ===============================
+   Animated Stars Background
+================================= */
+
+.stars{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:url("https://www.transparenttextures.com/patterns/stardust.png");
+    opacity:.45;
+    z-index:-2;
+    animation:starsMove 60s linear infinite;
+}
+
+@keyframes starsMove{
+    from{
+        background-position:0 0;
+    }
+    to{
+        background-position:0 1000px;
+    }
+}
+
+
+/* ===============================
+   Floating Hearts
+================================= */
+
+.hearts{
+    position:fixed;
+    inset:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    pointer-events:none;
+    z-index:999;
+}
+
+.heart{
+    position:absolute;
+    bottom:-40px;
+    font-size:24px;
+    animation:floatHeart linear forwards;
+}
+
+@keyframes floatHeart{
+
+    0%{
+        transform:translateY(0) scale(.8);
+        opacity:0;
+    }
+
+    15%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-110vh) scale(1.5) rotate(360deg);
+        opacity:0;
+    }
+
+}
+
+/* =========================
+   Birthday Button
+========================= */
+
+.birthday-btn{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:70px 0 40px;
+}
+
+.birthday-btn a{
+    text-decoration:none;
+    background:linear-gradient(135deg,#ff4d6d,#ff758f);
+    color:#fff;
+    padding:18px 45px;
+    font-size:20px;
+    font-weight:600;
+    border-radius:50px;
+    box-shadow:0 10px 30px rgba(255,77,109,.4);
+    transition:.35s ease;
+    letter-spacing:1px;
+}
+
+.birthday-btn a:hover{
+    transform:translateY(-5px) scale(1.05);
+    box-shadow:0 15px 40px rgba(255,77,109,.6);
+}
+
+@media(max-width:768px){
+
+.birthday-btn a{
+    font-size:17px;
+    padding:15px 30px;
+}
+
+}
