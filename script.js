@@ -7,21 +7,21 @@ const surpriseBtn = document.getElementById("surpriseBtn");
 const birthdayMessage = document.getElementById("birthdayMessage");
 const clock = document.querySelector(".clock");
 
-function getNextBirthday() {
-    const today = new Date();
-    let year = today.getFullYear();
+// function getNextBirthday() {
+//     const today = new Date();
+//     let year = today.getFullYear();
 
-    let birthday = new Date(year, 7, 31, 0, 0, 0);
+//     let birthday = new Date(year, 7, 31, 0, 0, 0);
 
-    if (today > birthday) {
-        birthday = new Date(year + 1, 7, 31, 0, 0, 0);
-    }
+//     if (today > birthday) {
+//         birthday = new Date(year + 1, 7, 31, 0, 0, 0);
+//     }
 
-    return birthday;
-}
-//  function getNextBirthday() {
-//     return new Date(Date.now() + 3 * 1000);
+//     return birthday;
 // }
+ function getNextBirthday() {
+    return new Date(Date.now() + 3 * 1000);
+}
 
 const birthday = getNextBirthday();
 

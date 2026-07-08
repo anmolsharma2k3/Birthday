@@ -32,20 +32,19 @@ body{
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:clamp(16px,5vw,20px);
+    padding:20px;
 }
 
-.wrap h3{font-size:clamp(1.3rem,4vw,2rem);letter-spacing:3px;color:#ffd6e8;text-align:center}
-.wrap h1{font-size:clamp(2.2rem,8vw,4rem);margin:10px 0 30px;text-shadow:0 0 20px #ff4f8b;text-align:center}
+.wrap h3{font-size:2rem;letter-spacing:3px;color:#ffd6e8;text-align:center}
+.wrap h1{font-size:4rem;margin:10px 0 30px;text-shadow:0 0 20px #ff4f8b;text-align:center}
 
 .clock{
     display:grid;
-    grid-template-columns:repeat(4,minmax(100px,140px));
-    gap:clamp(10px,2.5vw,20px);
+    grid-template-columns:repeat(4,140px);
+    gap:20px;
     justify-content:center;
     align-items:center;
     margin:0 auto;
-    width:100%;
 }
 .card{
     display:flex;
@@ -57,15 +56,15 @@ body{
     border:1px solid rgba(255,255,255,.15);
     backdrop-filter:blur(15px);
     border-radius:22px;
-    padding:clamp(15px,3vw,25px) 10px;
+    padding:25px 10px;
     box-shadow:0 10px 30px rgba(0,0,0,.45);
     transition:.4s;
 }
 .card:hover{transform:translateY(-8px) scale(1.04)}
-.card span{display:block;font-size:clamp(2rem,6vw,3rem);font-weight:700;text-align:center}
-.card label{color:#ddd;letter-spacing:2px;text-align:center;font-size:clamp(.75rem,2vw,1rem)}
+.card span{display:block;font-size:3rem;font-weight:700;text-align:center}
+.card label{color:#ddd;letter-spacing:2px;text-align:center}
 
-.wrap p{margin:30px 0;font-size:clamp(1rem,3vw,1.2rem);text-align:center}
+.wrap p{margin:30px 0;font-size:1.2rem;text-align:center}
 
 .btn{
     display:inline-block;
@@ -73,10 +72,9 @@ body{
     color:#fff;
     text-align:center;
     background:linear-gradient(135deg,#ff2d75,#ff6b81);
-    padding:clamp(12px,3vw,16px) clamp(24px,6vw,40px);
+    padding:16px 40px;
     border-radius:50px;
     font-weight:600;
-    font-size:clamp(.9rem,2.5vw,1rem);
     box-shadow:0 0 25px rgba(255,80,140,.5);
     transition:.35s;
 }
@@ -84,23 +82,23 @@ body{
 
 .maindiv,.maindiv2,.maindiv3,.maindiv4,.maindiv5,.funnychat{
     width:min(1200px,92%);
-    margin:clamp(30px,6vw,60px) auto;
+    margin:60px auto;
     background:rgba(255,255,255,.06);
     backdrop-filter:blur(14px);
     border-radius:30px;
-    padding:clamp(20px,5vw,40px);
+    padding:40px;
     border:1px solid rgba(255,255,255,.12);
     box-shadow:0 20px 50px rgba(0,0,0,.35);
 }
 
-.header{text-align:center;margin-bottom:clamp(24px,5vw,40px)}
-.header h3{font-size:clamp(2rem,7vw,4rem);color:#ff7db8;text-align:center}
-.header p{color:#ddd;text-align:center;font-size:clamp(.9rem,2.5vw,1.1rem)}
+.header{text-align:center;margin-bottom:40px}
+.header h3{font-size:4rem;color:#ff7db8;text-align:center}
+.header p{color:#ddd;text-align:center}
 
 .chat,.firstmeet,.secondmeet,.thirdmeet,.fourthmeet,.fifthmeet{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:clamp(20px,4vw,35px);
+    grid-template-columns:1fr 1fr;
+    gap:35px;
     align-items:center;
     justify-items:center;
     margin:30px 0;
@@ -110,8 +108,8 @@ body{
    so it needs its own grid rule with margin:auto to stay centered */
 .funnychat{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:clamp(20px,4vw,35px);
+    grid-template-columns:1fr 1fr;
+    gap:35px;
     align-items:center;
     justify-items:center;
 }
@@ -120,7 +118,7 @@ body{
     width:100%;
     background:rgba(255,255,255,.07);
     border-radius:20px;
-    padding:clamp(18px,4vw,30px);
+    padding:30px;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -130,7 +128,7 @@ body{
 
 .firstmeetimages,.funnychatimages,.secondmeetimages,.fourthmeetimages,.fifthmeetimages{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(min(180px,100%),1fr));
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
     gap:18px;
     margin-top:30px;
     width:100%;
@@ -157,14 +155,14 @@ img:hover{transform:scale(1.08)}
 
 .end{
     width:min(1200px,92%);
-    margin:clamp(30px,6vw,60px) auto;
+    margin:60px auto;
     text-align:center;
-    padding:clamp(35px,8vw,70px) 20px;
+    padding:70px 20px;
     border-radius:30px;
     background:linear-gradient(135deg,#ff3f88,#6f3bff);
 }
-.end1 p{font-size:clamp(1.4rem,5vw,2.2rem);margin-bottom:15px;text-align:center}
-.end2 p{font-size:clamp(1rem,3.5vw,1.4rem);text-align:center}
+.end1 p{font-size:2.2rem;margin-bottom:15px;text-align:center}
+.end2 p{font-size:1.4rem;text-align:center}
 
 /* Images */
 
@@ -200,7 +198,7 @@ img:hover{transform:scale(1.08)}
 /* Heading */
 
 .headersec1 h3{
-    font-size:clamp(2rem,7vw,4rem);
+    font-size:4rem;
     color:#ff7db8;
     text-align:center;
     width:100%;
@@ -208,7 +206,7 @@ img:hover{transform:scale(1.08)}
 
 .headersec2 p{
     color:#ddd;
-    font-size:clamp(.95rem,2.5vw,1.2rem);
+    font-size:1.2rem;
     text-align:center;
     margin-top:10px;
     width:100%;
@@ -238,7 +236,7 @@ img:hover{transform:scale(1.08)}
 .funnychat2 h2{
     color:#ff7db8;
     margin-bottom:15px;
-    font-size:clamp(1.4rem,4vw,2rem);
+    font-size:2rem;
     text-align:center;
     width:100%;
 }
@@ -247,7 +245,7 @@ img:hover{transform:scale(1.08)}
 .chattext{
     color:#eee;
     line-height:1.8;
-    font-size:clamp(.95rem,2.5vw,1.1rem);
+    font-size:1.1rem;
     text-align:center;
 }
 
@@ -263,7 +261,7 @@ img:hover{transform:scale(1.08)}
     display:none;
     margin:35px auto;
     text-align:center;
-    font-size:clamp(1.6rem,7vw,3rem);
+    font-size:3rem;
     color:#ffd700;
     text-shadow:0 0 20px #ff4d88;
     animation:heartbeat 1s infinite;
@@ -281,22 +279,21 @@ img:hover{transform:scale(1.08)}
 /* Responsive */
 
 @media(max-width:900px){
-    .clock{grid-template-columns:repeat(2,minmax(100px,140px))}
-    .header h3,.wrap h1{text-align:center}
+    .clock{grid-template-columns:repeat(2,140px)}
+    .chat,.firstmeet,.funnychat,.secondmeet,.thirdmeet,.fourthmeet,.fifthmeet{
+        grid-template-columns:1fr !important;
+        text-align:center;
+    }
+    .header h3,.wrap h1{font-size:2.5rem;text-align:center}
 }
 
 @media(max-width:500px){
     .clock{grid-template-columns:1fr;justify-items:center}
     .card{width:100%;max-width:280px;margin:0 auto}
-}
-
-@media(max-width:360px){
-    .maindiv,.maindiv2,.maindiv3,.maindiv4,.maindiv5,.funnychat,.end{
-        width:96%;
-        padding:16px;
+    .funnychatimages,.firstmeetimages,.secondmeetimages,.fourthmeetimages,.fifthmeetimages{
+        grid-template-columns:1fr;
     }
 }
-
 /* ===============================
    Animated Stars Background
 ================================= */
@@ -370,15 +367,15 @@ img:hover{transform:scale(1.08)}
     display:flex;
     justify-content:center;
     align-items:center;
-    margin:clamp(40px,8vw,70px) 0 40px;
+    margin:70px 0 40px;
 }
 
 .birthday-btn a{
     text-decoration:none;
     background:linear-gradient(135deg,#ff4d6d,#ff758f);
     color:#fff;
-    padding:clamp(14px,3vw,18px) clamp(28px,6vw,45px);
-    font-size:clamp(15px,3vw,20px);
+    padding:18px 45px;
+    font-size:20px;
     font-weight:600;
     border-radius:50px;
     box-shadow:0 10px 30px rgba(255,77,109,.4);
@@ -389,4 +386,13 @@ img:hover{transform:scale(1.08)}
 .birthday-btn a:hover{
     transform:translateY(-5px) scale(1.05);
     box-shadow:0 15px 40px rgba(255,77,109,.6);
+}
+
+@media(max-width:768px){
+
+.birthday-btn a{
+    font-size:17px;
+    padding:15px 30px;
+}
+
 }
